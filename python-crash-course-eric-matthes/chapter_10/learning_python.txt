@@ -1,0 +1,10 @@
+In Python you can perform basic arithmetic operations.
+In Python you can define and call functions.
+In Python you can create and manipulate lists.
+In Python you can read from and write to files.
+In Python you can use conditional statements like if, elif, and else.
+In Python you can loop through data using for and while loops.
+In Python you can handle exceptions with try and except blocks.
+In Python you can import and use modules and libraries.
+In Python you can define and use classes for object-oriented programming.
+In Python you can work with strings and perform text processing.
