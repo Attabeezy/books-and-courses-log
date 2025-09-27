@@ -1,0 +1,14 @@
+Chapter 1 Summary
+• Machine learning is easy! Anyone can learn it and use it, regardless of their background.
+All that is needed is a desire to learn and great ideas to implement!
+• Machine learning is tremendously useful, and it is used in most disciplines. From science
+to technology to social problems and medicine, machine learning is making an impact
+and will continue doing so.
+• Machine learning is common sense, done by a computer. It mimics the ways humans
+think to make decisions quickly and accurately.
+• Just like humans make decisions based on experience, computers can make decisions
+based on previous data. This is what machine learning is all about.
+Machine learning uses the remember-formulate-predict framework, as follows:
+• Remember: look at the previous data.
+• Formulate: build a model, or a rule, based on this data.
+• Predict: use the model to make predictions about future data.
