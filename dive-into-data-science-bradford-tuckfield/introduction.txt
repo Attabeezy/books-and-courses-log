@@ -1,0 +1,16 @@
+Introduction Chapter Summary
+
+- Data science can give you abilities that feel like magic: the ability to
+predict the future, the ability to multiply profits, the ability to
+automatically collect huge datasets, the ability to turn a word into a
+number, and more. Learning to do all these things well is not easy, and
+it takes serious study to make it to the most advanced level.
+
+- But the difficulty of learning data science can lead to great rewards, and if you
+master the skills in this book, you can succeed in a data science career
+and also have a lot of fun. 
+
+- This book is an introduction to the main
+ideas of data science and how they’re applied in business—it will get
+you started on the journey to becoming an expert data scientist in any
+field you choose.
