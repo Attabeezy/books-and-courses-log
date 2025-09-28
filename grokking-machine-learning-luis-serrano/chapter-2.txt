@@ -1,0 +1,28 @@
+Chapter 2: Types of machine learning Summary
+Summary
+• Several types of machine learning exist, including supervised learning, unsupervised
+learning, and reinforcement learning.
+• Data can be labeled or unlabeled. Labeled data contains a special feature, or label, that we
+aim to predict. Unlabeled data doesn’t contain this feature.
+• Supervised learning is used on labeled data and consists of building models that predict
+the labels for unseen data.
+• Unsupervised learning is used on unlabeled data and consists of algorithms that simplify
+our data without losing a lot of information. Unsupervised learning is often used as a
+preprocessing step.
+• Two common types of supervised learning algorithms are called regression and
+classification.
+– Regression models are those in which the answer is any number.
+– Classification models are those in which the answer is of a type or a class.
+• Two common types of unsupervised learning algorithms are clustering and
+dimensionality reduction.
+– Clustering is used to group data into similar clusters to extract information or make it
+easier to handle.
+– Dimensionality reduction is a way to simplify our data, by joining certain similar
+features and losing as little information as possible.
+– Matrix factorization and singular value decomposition are other algorithms that can
+simplify our data by reducing both the number of rows and columns.
+• Generative machine learning is an innovative type of unsupervised learning, consisting
+of generating data that is similar to our dataset. Generative models can paint realistic
+faces, compose music, and write poetry.
+• Reinforcement learning is a type of machine learning in which an agent must navigate an
+environment and reach a goal. It is extensively used in many cutting-edge applications.
