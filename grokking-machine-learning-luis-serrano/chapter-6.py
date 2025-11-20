@@ -66,3 +66,59 @@ def logistic_regression_algorithm(features, labels, learning_rate = 0.01, epochs
         j = random.randint(0, len(labels) - 1)
         weights, bias = logistic_regression_trick(weights, bias, features[j], labels[j], learning_rate)
     return weights, bias, errors
+
+def softmax(z):
+    exp_z = np.exp(z - np.max(z))
+    return exp_z / exp_z.sum(axis=0)
+
+# Exercise 6.1: implement prediction for given data
+# given sigmoid(d + 0.5c - 0.8), what is the prediction for c=1 and d=1?
+
+weights = [1, 0.5] # d + 0.5c
+bias = -0.8
+features = [1, 1]  # c=1, d=1
+
+pred = prediction(weights, bias, features)
+#print("Prediction for c=1 and d=1:", pred)
+
+# Exercise 6.2: implement logistic regression for given data
+# given sigmoid(2x1 + 3x2 -4), p = (1, 1), label = 0, calculate prediction and log loss
+
+# predition calculation
+weights = [2, 3]  # 2x1 + 3x2
+bias = -4
+features = [1, 1]  # x1=1, x2=1
+
+#print("Prediction for p: ", prediction(weights, bias, features))
+
+# log loss calculation
+label = 0
+
+#print("Log Loss for p: ", log_loss(weights, bias, features, label))
+
+# use logistic trck to obtain a new model that producess smaller log loss. learning rate = 0.1
+
+new_weights, new_bias = logistic_regression_trick(weights, bias, features, label, learning_rate=0.1, epoch=100)
+
+#print("New Log Loss for p: ", log_loss(new_weights, new_bias, features, label))
+
+# Exercise 6.3: Find p for prediction 0.8
+# given sigmoid(3x1 + 2x2 -5) = 0.8, find p = (x1, x2)
+
+#print(sigmoid(1.3862943611198906))  # should be close to 0.8 (refer to a sigmoid table or use calculator)
+
+# np.dot(weights, features) + bias = 1.3862943611198906
+# np.dot(weights, features) = 1.3862943611198906 - bias
+# weights * features = 1.3862943611198906 + bias
+# given that features is an array of two numbers let's split
+# w1 * f1 + w2 * f2 = 1.3862943611198906 + bias
+# 3 * f1 + 2 * f2 = 1.386294361
+# let's assume f2 = 1
+# 3 * f1 + 2 * 1 = 1.3862943611198906 + 5
+# 3 * f1 = 1.3862943611198906 + 5 - 2
+# f1 = (1.3862943611198906 + 5 - 2) / 3
+# f2 = 1
+
+features = [ (1.3862943611198906 + 5 - 2) / 3 , 1 ]
+print("Features for prediction 0.8:", features)
+print("Verification:", prediction([3, 2], -5, features))  # should be close to 0.8
