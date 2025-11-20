@@ -1,5 +1,4 @@
-"""
-To wrap up, these quantities are the following in both of our models:
+"""To wrap up, these quantities are the following in both of our models:
 Medical model:
 • Recall and sensitivity: among the sick people (positives), how many were correctly
 diagnosed as sick?
@@ -68,5 +67,56 @@ the worse the model.
 • By looking at the ROC curve, we can make decisions on what threshold to use to give us
 good values for both the sensitivity and the specificity, depending on how much of each
 our model expects. This makes the ROC curve one of the most popular and useful ways
-to evaluate and improve a model.
-"""
+to evaluate and improve a model."""
+
+# exercise 7.1
+y_true = [1,1,0,1,0,1,1,0,0,0]
+y_pred = [1,1,1,1,0,0,0,0,0,0]
+
+tp = sum([1 for t,p in zip(y_true,y_pred) if t==1 and p==1])
+fp = sum([1 for t,p in zip(y_true,y_pred) if t==0 and p==1])
+tn = sum([1 for t,p in zip(y_true,y_pred) if t==0 and p==0])
+fn = sum([1 for t,p in zip(y_true,y_pred) if t==1 and p==0])
+
+acc = (tp + tn) / len(y_true)
+prec = tp / (tp + fp)
+recall = tp / (tp + fn)
+f1 = 2 * (prec * recall) / (prec + recall)
+
+print("ex7.1:", acc, recall, prec, f1)
+
+# exercise 7.2
+tp = 120
+fn = 22
+tn = 795
+fp = 63
+
+sens = tp / (tp + fn)
+spec = tn / (tn + fp)
+
+print("ex7.2:", sens, spec)
+
+# exercise 7.3
+def precision(tp, fp):
+    return tp / (tp + fp)
+
+def recall(tp, fn):
+    return tp / (tp + fn)
+
+print("ex7.3:",
+      "movie=recall",
+      "pedestrian=recall",
+      "voice_assistant=precision")
+
+# exercise 7.4
+def f_beta(p, r, b):
+    return (1 + b*b) * (p*r) / (b*b*p + r)
+
+print("ex7.4:",
+      "pedestrian=beta2or3",
+      "illness=beta2",
+      "movies=beta1",
+      "voice=beta0.5",
+      "spam=beta0.5")
+
+
