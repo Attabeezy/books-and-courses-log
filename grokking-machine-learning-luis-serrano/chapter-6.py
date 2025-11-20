@@ -14,7 +14,7 @@ to its label.
 • The logistic trick takes a labeled data point and a boundary line. If the point is
 incorrectly classified, the line is moved closer to the point, and if it is correctly classified,
 the line is moved farther from the point. This is more useful than the perceptron trick,
-because the perceptron trick doesn’t move the line if the point is correctly classified.
+because the perceptron trick does not move the line if the point is correctly classified.
 • The logistic regression algorithm is used to fit a logistic classifier to a labeled dataset. It
 consists of starting with a logistic classifier with random weights and continuously
 picking a random point and applying the logistic trick to obtain a slightly better
