@@ -24,11 +24,11 @@ This directory contains Python projects from the Bro Code YouTube channel.
 
 This directory contains datasets and workbooks from DataCamp's Excel courses.
 
-### [Dive into Data Science](./dive-into-data-science-bradford-tuckfield/)
+### [Dive into Data Science](dive-into-ds/)
 
 This directory contains code and notes from the book "Dive into Data Science" by Bradford Tuckfield.
 
-### [Grokking Machine Learning](./grokking-machine-learning-luis-serrano/)
+### [Grokking Machine Learning](./grokking-ml/)
 
 This directory contains code and notes from the book "Grokking Machine Learning" by Luis Serrano.
 
@@ -44,6 +44,6 @@ This directory contains machine learning projects developed in Google Colab.
 
 This directory contains projects from the Neural Nine YouTube channel.
 
-### [Python Crash Course](./python-crash-course-eric-matthes/)
+### [Python Crash Course](py-crash-course/)
 
 This directory contains exercises and projects from the book "Python Crash Course" by Eric Matthes.
